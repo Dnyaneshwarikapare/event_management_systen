@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    nav{
+        background-color: rgb(242, 12, 242);
+        font-size: medium;
+        overflow: hidden;
+        text-align: center;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        float: left;
+        color: rgb(0, 12, 9);
+        text-align: center;
+    }
+    .container{
+        box-sizing: border-box;
+        text-align: center;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="registration.html">REGISTRATION</a>
+        <a href="login.html">LOGIN</a>
+        <a href="aboutus.html">ABOUT US</a>
+        </nav>
+    <div class="container">
+        <h2> LOGIN </h2>
+        <form action="">
+            <div class="form-group">
+                <label for="">Email</label>
+            <input type="email" required>
+            <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <label for=""> Password </label>
+                <input type="password" required>
+                <i class="fa-solid fa-lock"></i>
+                </div>
+                <p> <input type="checkbox"> Remeber Me 
+                <a href="#">Forget Password</a> </p>
+                <button class="custom-button"><a href="loginbtn.html">LOGIN</a></button> 
+
+                <p> Don't have a account <a href="registration.html">Register</a></p>
+
+        </form>
+    </div>
+</body>
+</html>

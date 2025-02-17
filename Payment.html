@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container {
+        align-items: center;
+        height: 50vh;
+        width: 180vh;
+        background-color: rgb(213, 109, 225);
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    section
+    {
+      align-items: center;
+     padding: 50px;
+    }
+    p{
+        text-align: center;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+</style>
+<body>
+    <h1> PAYMENT FORM </h1>
+    <section>    
+        <form action="">
+<div class="container">
+<p> Card Type: *  
+    <select name="card_type" id="card_type" required>
+        <option value="">*****Select a card type*****</option>
+        <option value="visa">VISA</option>
+        <option value="rupay">RUPAY</option>
+        <option value="platinum">PLATINUM</option>
+        <option value="debit">DEBIT</option>
+    </select>    
+    </p>
+        <p>Card Number: * <input type="number" name="card_number" id="card_number" required></p>
+        </p>
+        <p> Expiration Date: * <input type="date" name="exp_date" id="exp_date" required> </p>
+        <p> CVV: * <input type="password" name="cvv" id="cvv" required> </p>
+        <p><input type="reset" value="RESET"></p>
+        <p> <a href="Paymentsubmission.html">PAYNOW </a> </p> 
+        </div>
+        </form>
+        </section>
+</body>
+</html>

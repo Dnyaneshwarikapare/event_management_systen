@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION PAGE</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    nav{
+        background-color: rgb(242, 12, 242);
+        font-size: medium;
+        overflow: hidden;
+        text-align: center;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        float: left;
+        color: rgb(0, 12, 9);
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    .container {
+        box-sizing: border-box;
+        text-align: center;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <nav>
+    <a href="home.html">HOME</a>
+    <a href="events.html">EVENTS</a>
+    <a href="registration.html">REGISTRATION</a>
+    <a href="login.html">LOGIN</a>
+    <a href="aboutus.html">ABOUT US</a>
+    </nav>
+ <section>
+    <h1> REGISTRATION FORM </h1>
+    <div class="container">
+    <form action=""> 
+        <p>Name: * <input type="text" name="Name" id=""  required></p>  <!--name="Name" is for backend server so that it could understand which info is for which type--> 
+       <!--fieldset is used to combine the entire set of gener-->
+            GENDER *
+            <p>
+          Male: <input type="radio" name="gender" id="male" required>
+          Female: <input type="radio" name="gender" id="female" required> <!--name="gender" is same for both so that at a time server can select the unique or only one button-->
+        </p> 
+        <p>Address: <textarea name="address" id="address" cols="50" rows="2"></textarea> </p>
+        <p>Email: * <input type="email" name="email" id="email" required> </p>
+        <p> Pincode: * <input type="number" name="pincode" id="pincode" required> </p>
+        <button class="custom-button"><a href="registerbutton.html">REGISTRATION</a></button> 
+    </div>
+    </section>
+</body>
+</html>
